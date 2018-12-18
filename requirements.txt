@@ -1,0 +1,5 @@
+colorama==0.4.1
+Jinja2==2.10
+MarkupSafe==1.1.0
+tabulate==0.8.2
+Wand==0.4.5

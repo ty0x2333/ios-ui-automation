@@ -68,5 +68,6 @@ iOSInjectionProject/
 compare.gif
 vendor
 screenshots*
+!screenshots-answers
 venv
 .idea

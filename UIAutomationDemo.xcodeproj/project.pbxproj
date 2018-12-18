@@ -12,6 +12,7 @@
 		7078245321C8978500955DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7078245221C8978500955DCD /* Assets.xcassets */; };
 		7078245621C8978500955DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7078245421C8978500955DCD /* LaunchScreen.storyboard */; };
 		7078246121C8978500955DCD /* UIAutomationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7078246021C8978500955DCD /* UIAutomationDemoUITests.swift */; };
+		7078247021C8D24D00955DCD /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7078246E21C8D24D00955DCD /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		7078245C21C8978500955DCD /* UIAutomationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIAutomationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7078246021C8978500955DCD /* UIAutomationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAutomationDemoUITests.swift; sourceTree = "<group>"; };
 		7078246221C8978500955DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7078246E21C8D24D00955DCD /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +89,20 @@
 		7078245F21C8978500955DCD /* UIAutomationDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				7078246D21C8D24D00955DCD /* fastlane */,
 				7078246021C8978500955DCD /* UIAutomationDemoUITests.swift */,
 				7078246221C8978500955DCD /* Info.plist */,
 			);
 			path = UIAutomationDemoUITests;
 			sourceTree = "<group>";
+		};
+		7078246D21C8D24D00955DCD /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				7078246E21C8D24D00955DCD /* SnapshotHelper.swift */,
+			);
+			path = fastlane;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -203,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7078246121C8978500955DCD /* UIAutomationDemoUITests.swift in Sources */,
+				7078247021C8D24D00955DCD /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

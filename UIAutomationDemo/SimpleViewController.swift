@@ -37,6 +37,6 @@ class SimpleViewController: UIViewController {
     }
     
     @objc private func onClick() {
-        label.transform = label.transform.rotated(by: CGFloat.pi / 2.0)
+        label.transform = label.transform.rotated(by: CGFloat.pi)
     }
 }

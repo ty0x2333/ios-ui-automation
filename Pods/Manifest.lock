@@ -1,0 +1,16 @@
+PODS:
+  - SimulatorStatusMagic (2.3.2)
+
+DEPENDENCIES:
+  - SimulatorStatusMagic
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SimulatorStatusMagic
+
+SPEC CHECKSUMS:
+  SimulatorStatusMagic: 0c0e711acef6e70dd8a0710962347635a9cdef24
+
+PODFILE CHECKSUM: f2916ac97f40e3c0fc652ab4ba17652f03e40970
+
+COCOAPODS: 1.5.3

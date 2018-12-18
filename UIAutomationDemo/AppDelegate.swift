@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SimulatorStatusMagic
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.viewControllers = [UINavigationController(rootViewController: SimpleViewController())]
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+        if UserDefaults.standard.bool(forKey: "FASTLANE_SNAPSHOT") {
+            SDStatusBarManager.sharedInstance()?.enableOverrides()
+        }
         return true
     }
 

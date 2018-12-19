@@ -1,6 +1,6 @@
 UIAutomation + Fastlane Screenshots + ImageMagick Demo
 ===
-Article: https://medium.com/@tyy.sh/e229c7fc63b6
+Article: [https://tyy.sh/blog/e229c7fc63b6](https://tyy.sh/blog/e229c7fc63b6)
 
 Installation
 ===

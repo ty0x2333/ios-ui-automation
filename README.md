@@ -25,3 +25,7 @@ Usage
 $ bundle exec fastlane snapshot
 $ python script/compare_images.py -a screenshots-answers/en-US -i screenshots/en-US -o screenshots-diff
 ```
+
+Workflow
+===
+![Workflow](images/UI-Automation-Workflow.png)

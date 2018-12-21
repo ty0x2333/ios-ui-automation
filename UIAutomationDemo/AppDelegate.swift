@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [UINavigationController(rootViewController: SimpleViewController())]
+        tabBarController.viewControllers = [UINavigationController(rootViewController: TableViewController())]
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
-        if UserDefaults.standard.bool(forKey: "FASTLANE_SNAPSHOT") {
+        if UITestUtils.isTesting {
             SDStatusBarManager.sharedInstance()?.enableOverrides()
         }
         return true

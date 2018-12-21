@@ -14,7 +14,8 @@ class SimpleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Bundle.main.infoDictionary?["CFBundleName"] as? String
+        title = "Simple"
+        view.backgroundColor = UIColor.white
         
         label.text = "Hello World"
         label.textAlignment = .center

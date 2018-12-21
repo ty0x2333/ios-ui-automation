@@ -8,32 +8,49 @@
 
 import XCTest
 
+extension XCUIElement {
+    // The following is a workaround for inputting text in the
+    //simulator when the keyboard is hidden
+    func setText(text: String, application: XCUIApplication) {
+        UIPasteboard.general.string = text
+        coordinate(withNormalizedOffset: .zero).withOffset(CGVector(dx: 10, dy: 10)).doubleTap()
+        let pasteMenuItem = application.menuItems.firstMatch
+        pasteMenuItem.tap()
+    }
+}
+
 class UIAutomationDemoUITests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         let app = XCUIApplication()
+        app.launchEnvironment = ["animations": "0"]
         setupSnapshot(app)
         app.launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
         snapshot("0Launch")
-        XCUIApplication().buttons["rotate"].tap()
-        snapshot("1Launch")
+        
+        app.tables.cells.staticTexts["Simple"].tap()
+        snapshot("1Simple")
+        let rotateButton = app.buttons["rotate"]
+        rotateButton.tap()
+        snapshot("2Simple")
+        app.navigationBars["Simple"].buttons["UIAutomationDemo"].tap()
+        
+        app.tables.cells.staticTexts["Special"].tap()
+        snapshot("3Special")
+        let searchField = app.searchFields.firstMatch
+        searchField.tap()
+        searchField.setText(text: "abs", application: app)
+        snapshot("4Special")
+        app.navigationBars["Special"].buttons["UIAutomationDemo"].tap()
     }
-
 }

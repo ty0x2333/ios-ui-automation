@@ -14,6 +14,9 @@
 		7078245621C8978500955DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7078245421C8978500955DCD /* LaunchScreen.storyboard */; };
 		7078246121C8978500955DCD /* UIAutomationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7078246021C8978500955DCD /* UIAutomationDemoUITests.swift */; };
 		7078247021C8D24D00955DCD /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7078246E21C8D24D00955DCD /* SnapshotHelper.swift */; };
+		70EFAD7021CC95E2004CE28F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFAD6F21CC95E2004CE28F /* TableViewController.swift */; };
+		70EFAD7221CCC588004CE28F /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFAD7121CCC588004CE28F /* SpecialViewController.swift */; };
+		70EFAD7421CCC903004CE28F /* UITestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFAD7321CCC903004CE28F /* UITestUtils.swift */; };
 		90963F31C4CBFC0FB8E21786 /* Pods_UIAutomationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305466C8D97AAFBCA8A78947 /* Pods_UIAutomationDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,9 @@
 		7078246021C8978500955DCD /* UIAutomationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAutomationDemoUITests.swift; sourceTree = "<group>"; };
 		7078246221C8978500955DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7078246E21C8D24D00955DCD /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		70EFAD6F21CC95E2004CE28F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		70EFAD7121CCC588004CE28F /* SpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
+		70EFAD7321CCC903004CE28F /* UITestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestUtils.swift; sourceTree = "<group>"; };
 		7AD38F7D05B0AB4D30B98205 /* Pods-UIAutomationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIAutomationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIAutomationDemo/Pods-UIAutomationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E7D7632830AB6309A304F0EF /* Pods_UIAutomationDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIAutomationDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +97,9 @@
 			children = (
 				7078244B21C8978300955DCD /* AppDelegate.swift */,
 				7078244D21C8978300955DCD /* SimpleViewController.swift */,
+				70EFAD6F21CC95E2004CE28F /* TableViewController.swift */,
+				70EFAD7121CCC588004CE28F /* SpecialViewController.swift */,
+				70EFAD7321CCC903004CE28F /* UITestUtils.swift */,
 				7078245221C8978500955DCD /* Assets.xcassets */,
 				7078245421C8978500955DCD /* LaunchScreen.storyboard */,
 				7078245721C8978500955DCD /* Info.plist */,
@@ -309,7 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7078244E21C8978300955DCD /* SimpleViewController.swift in Sources */,
+				70EFAD7421CCC903004CE28F /* UITestUtils.swift in Sources */,
+				70EFAD7021CC95E2004CE28F /* TableViewController.swift in Sources */,
 				7078244C21C8978300955DCD /* AppDelegate.swift in Sources */,
+				70EFAD7221CCC588004CE28F /* SpecialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
